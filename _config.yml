@@ -1,0 +1,17 @@
+encoding: utf-8
+title: 标题
+
+baseurl: /simple-jekyll-theme
+categoriesurl: /simple-jekyll-theme/pages/categories
+searchurl: /simple-jekyll-theme/pages/search
+linksurl: /simple-jekyll-theme/pages/links
+chaturl: /simple-jekyll-theme/pages/chat
+abouturl: /simple-jekyll-theme/pages/about
+
+# 用于多说评论 填入留言板地址
+# realchaturl: http://xxx.xxx/simple-jekyll-theme/pages/chat
+
+cssurl: /simple-jekyll-theme/static/css
+jsurl: /simple-jekyll-theme/static/js
+
+permalink: /posts/:title.html
