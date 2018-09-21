@@ -8,7 +8,6 @@ author: Tsingxu
 
 # "","/blog"
 context: ""
-"siteMapPrefix": "http://blog.tsingxu.net"
 
 ## 文章url前缀 context/自定义，下面的context为''
 permalink: /posts/:year/:month/:day/:title.html
