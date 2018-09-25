@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 友情链接
-css: [common.css,header.css,footer.css,totop.css,links.css]
+css: [blog.css,links.css]
 js: [common.js,header.js,totop.js]
 ---
 
