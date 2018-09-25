@@ -283,7 +283,8 @@ footer .up:after {
 }
 
 #articlelist .type-head{
-    color: #999;
+    color: #ccc;
+    font-size: 16px;
 }
 
 #articlelist ul{
@@ -298,6 +299,7 @@ footer .up:after {
 }
 
 #articlelist li{
+    list-style: disc;
     line-height: 30px;
     margin-bottom: 2px;
     display: list-item;
@@ -310,7 +312,6 @@ footer .up:after {
 }
 
 #articlelist li>a{
-    color: #111;
     word-wrap: break-word;
 }
 
