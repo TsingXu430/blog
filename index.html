@@ -9,30 +9,34 @@ js: [blog.js]
 	{% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
 
 	{% if forloop.first %}
-	<div class="list-group"><span>{{ this_year }}</span><ul>
-		{% endif %}
+	<div class="list-group">
+		<span>{{ this_year }}</span>
+		<ul>
+			<!--{% endif %}-->
 
-		{% if this_year == next_year %}
-		<li class="info">
-			<span class="time md">{{ post.date | date: "%Y/%m/%d" }}</span>
-			<a href="{{site.baseurl}}{{ post.url }}" class="title">{{ post.title }}</a>
-			<span class="categories md">&nbsp;
-					{% for cat in post.categories %}
-						<a href="{{site.baseurl}}/pages/categories.html#{{ cat }}">{{ cat }}</a>
-					{% endfor %}
+			{% if this_year == next_year %}
+			<li class="info">
+				<span class="time md">{{ post.date | date: "%Y/%m/%d" }}</span>
+				<a href="{{site.baseurl}}{{ post.url }}" class="title">{{ post.title }}</a>
+				<span class="categories md">&nbsp;
+						{% for cat in post.categories %}
+							<a href="{{site.baseurl}}/pages/categories.html#{{ cat }}">{{ cat }}</a>
+						{% endfor %}
 				</span>
-		</li>
-		{% else %}
-		{% if forloop.last %}
-		<li class="info">
-			<span class="time md">{{ post.date | date: "%Y/%m/%d" }}</span>
-			<a href="{{site.baseurl}}{{ post.url }}" class="title">{{ post.title }}</a>
-			<span class="categories md">&nbsp;
-					{% for cat in post.categories %}
-						<a href="{{site.baseurl}}/pages/categories.html#{{ cat }}">{{ cat }}</a>
-					{% endfor %}
+			</li>
+			{% else %}
+			{% if forloop.last %}
+			<li class="info">
+				<span class="time md">{{ post.date | date: "%Y/%m/%d" }}</span>
+				<a href="{{site.baseurl}}{{ post.url }}" class="title">{{ post.title }}</a>
+				<span class="categories md">&nbsp;
+						{% for cat in post.categories %}
+							<a href="{{site.baseurl}}/pages/categories.html#{{ cat }}">{{ cat }}</a>
+						{% endfor %}
 				</span>
-		</li></ul></div>
+			</li>
+		</ul>
+	</div>
 	{% else %}
 	<li class="info">
 		<span class="time md">{{ post.date | date: "%Y/%m/%d" }}</span>
