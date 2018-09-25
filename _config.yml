@@ -1,6 +1,7 @@
 encoding: utf-8
 title: 标题
 
+context: ""
 baseurl: /blog
 categoriesurl: /blog/pages/categories
 searchurl: /blog/pages/search
@@ -14,4 +15,4 @@ abouturl: /blog/pages/about
 cssurl: /blog/static/css
 jsurl: /blog/static/js
 
-permalink: /posts/:title.html
+permalink: /posts/:year/:month/:day/:title.html
