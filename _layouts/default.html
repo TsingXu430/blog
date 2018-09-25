@@ -3,6 +3,9 @@
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+		<meta name="keywords" content="{{ site.author }}{% for category in page.categories %},{{ category }}{% endfor %}"/>
+		<meta name="author" content="{{ site.author }}" />
+		<meta name="description" content="{{ page.title }}"/>
 		{% for css in page.css %}
 			<link rel="stylesheet" href="{{site.cssurl}}/{{ css }}">
 		{% endfor %}

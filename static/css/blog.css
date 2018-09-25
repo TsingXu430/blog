@@ -261,10 +261,6 @@ footer a{
     background-color: #444;
 }
 
-#articlelist .type-head{
-    color: #999;
-}
-
 #articlelist ul{
     display: block;
     list-style-type: disc;
@@ -277,7 +273,8 @@ footer a{
 }
 
 #articlelist li{
-    line-height: 30px;
+    list-style: disc;
+    line-height: 35px;
     margin-bottom: 2px;
     display: list-item;
     text-align: -webkit-match-parent;
@@ -285,11 +282,9 @@ footer a{
 
 #articlelist li time{
     color: #666;
-    font-size: 14px;
 }
 
 #articlelist li>a{
-    color: #111;
     word-wrap: break-word;
 }
 
