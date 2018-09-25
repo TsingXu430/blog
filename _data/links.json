@@ -1,3 +1,16 @@
 [
-{"name":"百度","url":"http://www.baidu.com","description":"百度一下,你就知道了"}
+  {
+    "title": "Tsingxu Douban",
+    "content": "Tsingxu Douban",
+    "url": "https://www.douban.com/people/127698022/",
+    "desc": "我的豆瓣",
+    "img": "http://blog.tmaize.net/static/img/logo.jpg"
+  },
+  {
+    "title": "Caohaoyu Blog",
+    "content": "Caohaoyu Blog",
+    "url": "http://blog.tmaize.net",
+    "desc": "愚蠢的家伙",
+    "img": "http://blog.tmaize.net/static/img/logo.jpg"
+  }
 ]

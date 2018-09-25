@@ -1,9 +1,20 @@
 ---
 layout: default
-title: 一些链接
+title: 友情链接
 css: [common.css,header.css,footer.css,totop.css,links.css]
 js: [common.js,header.js,totop.js]
 ---
+
+<ul>
+	{% for link in site.data.links %}
+	<li>
+		<p><a href="{{ link.url }}" title="{{ link.title }}" target="_blank">{{ link.content }}</a></p>
+		<p>{{ link.desc }}</p>
+	</li>
+	{% endfor %}
+</ul>
+
+<!--
 <div id="links">
 	<ul>
 		{% for link in site.data.links %}
@@ -13,4 +24,4 @@ js: [common.js,header.js,totop.js]
 			</li>
 		{% endfor %}
 	</ul>
-</div>
+</div>-->
