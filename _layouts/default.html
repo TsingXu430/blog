@@ -6,6 +6,7 @@
 		{% for css in page.css %}
 			<link rel="stylesheet" href="{{site.cssurl}}/{{ css }}">
 		{% endfor %}
+		<script>window.blog={contextPath:""}</script>
 		{% for js in page.js %}
 			<script type="text/javascript" src="{{site.jsurl}}/{{ js }}"></script>
 		{% endfor %}
