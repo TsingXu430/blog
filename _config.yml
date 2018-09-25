@@ -1,5 +1,10 @@
 encoding: utf-8
-title: 标题
+
+# seo
+title: Tsingxu Blog
+description: Tsingxu Blog
+keywords: Tsingxu,Blog,PHP,Html,Css,Js,Nginx
+author: Tsingxu
 
 context: ""
 baseurl: /blog
