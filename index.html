@@ -9,8 +9,7 @@ js: [blog.js]
 	{% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
 
 	{% if forloop.first %}
-	<!--<div class="type-head">{{ this_year }}</div>-->
-	<span>{{ this_year }}</span>
+	<div class="type-head">{{ this_year }}</div>
 	<ul>
 		{% endif %}
 
@@ -47,8 +46,7 @@ js: [blog.js]
 						</span>
 	</li>
 	</ul>
-	<!--<div class="type-head">{{ next_year }}</div>-->
-	<span>{{ next_year }}</span>
+	<div class="type-head">{{ next_year }}</div>
 	<ul>
 		{% endif %}
 		{% endif %}
