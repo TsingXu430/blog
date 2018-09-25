@@ -119,8 +119,7 @@ blog.addLoadEvent(function () {
 
 // 回到顶部
 blog.addLoadEvent(function () {
-    //var upDom = document.getElementsByClassName('footer')[0].getElementsByClassName('up')[0];
-    var upDom = document.getElementById("totop");
+    var upDom = document.getElementsByClassName('footer')[0].getElementsByClassName('up')[0];
     function getScrollTop() {
         if (document.documentElement && document.documentElement.scrollTop) {
             return document.documentElement.scrollTop;

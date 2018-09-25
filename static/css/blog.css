@@ -10,7 +10,7 @@ body {
     color: #313131;
 }
 
-/* 
+/*
    -webkit-scrollbar隐藏滚动条
    手机：前置条件是高度固定，PC随意
    使用此属性，window上的scroll事件就无法监听到了
@@ -243,20 +243,19 @@ footer a{
     color: #111;
     text-decoration: underline;
 }
-
-#totop{
-    position: fixed;
-    right: 20px;
-    bottom: -40px;
-    width: 30px;
-    height: 30px;
-    background: #E8E6E6;
-    transition: all 500ms ease 0ms;
-}
-#totop .show {
+footer .up {
+     position: fixed;
+     right: 20px;
+     bottom: -40px;
+     width: 30px;
+     height: 30px;
+     background: #E8E6E6;
+     transition: all 500ms ease 0ms;
+ }
+footer .up.show {
     bottom: 20px;
 }
-#totop:after {
+footer .up:after {
     position: absolute;
     top: 8px;
     left: 7px;
@@ -266,9 +265,25 @@ footer a{
     border-left: 8px solid #E8E6E6;
 }
 
+#totop{
+    display: none;
+    position: fixed;
+    width: 38px;
+    height: 38px;
+    bottom: 45px;
+    right: 25px;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
+    background-color: #777;
+}
+#totop:hover{
+    background-color: #444;
+}
+
 #articlelist .type-head{
-    color: #ccc;
-    font-size: 16px;
+    color: #999;
 }
 
 #articlelist ul{
@@ -283,8 +298,7 @@ footer a{
 }
 
 #articlelist li{
-    list-style: disc;
-    line-height: 35px;
+    line-height: 30px;
     margin-bottom: 2px;
     display: list-item;
     text-align: -webkit-match-parent;
@@ -292,9 +306,11 @@ footer a{
 
 #articlelist li time{
     color: #666;
+    font-size: 14px;
 }
 
 #articlelist li>a{
+    color: #111;
     word-wrap: break-word;
 }
 
@@ -308,4 +324,30 @@ footer a{
     #articlelist time,#articlelist span{
         display: none;
     }
+}
+#listcategories {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(207, 207, 207, 0.41);
+}
+#listcategories>blockquote{
+    margin: 20px 0;
+    border-left: 3px solid #000;
+    text-indent: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#listcategories ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#listcategories ul li{
+    display: inline-block;
+}
+#listcategories ul li a{
+    display:  inline-block;
+    color: #111;
+    padding: 5px 5px;
 }
