@@ -4,6 +4,7 @@ html, body {
 }
 
 body {
+    cursor: url(../img/cursor.ico),auto;
     font-family: Helvetica, Tahoma, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei";
     font-size: 15px;
     line-height: 1.8;
