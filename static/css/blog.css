@@ -117,8 +117,8 @@ body>* {
 }
 
 .header .logo>img {
-    width: 35px;
-    height: 35px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     box-shadow: 0 1px 5px rgba(0, 0, 0, .1);
     vertical-align: bottom;
@@ -130,7 +130,8 @@ body>* {
 }
 
 .header .menu a {
-    line-height: 35px;
+    font-size: 18px;
+    line-height: 50px;
     margin-left: 24px;
     position: relative;
 }
